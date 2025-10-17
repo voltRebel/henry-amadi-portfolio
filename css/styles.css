@@ -287,7 +287,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: 0;
     overflow: hidden;
 }
 
@@ -435,6 +435,8 @@ body {
     justify-content: space-between;
     padding-top: 120px;
     padding-bottom: var(--spacing-4xl);
+    position: relative;
+    z-index: 10;
 }
 
 .hero-top {
@@ -551,6 +553,522 @@ body {
     justify-content: center;
     gap: var(--spacing-4xl);
     margin-top: var(--spacing-4xl);
+}
+
+/* 3D Background Animations */
+.bg-3d-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.bg-3d-shape {
+    position: absolute;
+    opacity: 0.3;
+    animation: float3D 20s infinite linear;
+}
+
+.bg-cube-1 {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    transform: rotateX(45deg) rotateY(45deg);
+    animation-delay: 0s;
+    top: 20%;
+    left: 10%;
+}
+
+.bg-cube-2 {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(45deg, var(--accent-color), var(--primary-color));
+    transform: rotateX(60deg) rotateY(30deg);
+    animation-delay: -5s;
+    top: 60%;
+    right: 15%;
+}
+
+.bg-cube-3 {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
+    transform: rotateX(30deg) rotateY(60deg);
+    animation-delay: -10s;
+    bottom: 30%;
+    left: 20%;
+}
+
+.bg-sphere-1 {
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle, var(--primary-color), transparent);
+    border-radius: 50%;
+    animation-delay: -3s;
+    top: 40%;
+    right: 30%;
+}
+
+.bg-sphere-2 {
+    width: 70px;
+    height: 70px;
+    background: radial-gradient(circle, var(--secondary-color), transparent);
+    border-radius: 50%;
+    animation-delay: -8s;
+    bottom: 20%;
+    right: 10%;
+}
+
+.bg-pyramid-1 {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 50px solid var(--primary-color);
+    animation-delay: -7s;
+    top: 30%;
+    left: 70%;
+}
+
+.bg-pyramid-2 {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 40px solid var(--accent-color);
+    animation-delay: -12s;
+    bottom: 40%;
+    left: 5%;
+}
+
+/* Additional 3D shapes for other sections */
+.bg-cube-4 {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    transform: rotateX(50deg) rotateY(40deg);
+    animation-delay: -2s;
+    top: 15%;
+    right: 20%;
+}
+
+.bg-sphere-3 {
+    width: 35px;
+    height: 35px;
+    background: radial-gradient(circle, var(--secondary-color), transparent);
+    border-radius: 50%;
+    animation-delay: -6s;
+    bottom: 25%;
+    left: 15%;
+}
+
+.bg-pyramid-3 {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 35px solid var(--primary-color);
+    animation-delay: -9s;
+    top: 50%;
+    right: 5%;
+}
+
+@keyframes float3D {
+    0% {
+        transform: translateY(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    25% {
+        transform: translateY(-20px) rotateX(90deg) rotateY(90deg) rotateZ(45deg);
+    }
+    50% {
+        transform: translateY(-40px) rotateX(180deg) rotateY(180deg) rotateZ(90deg);
+    }
+    75% {
+        transform: translateY(-20px) rotateX(270deg) rotateY(270deg) rotateZ(135deg);
+    }
+    100% {
+        transform: translateY(0px) rotateX(360deg) rotateY(360deg) rotateZ(180deg);
+    }
+}
+
+/* Particle System */
+.particle-system {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.particle {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: particleFloat 15s infinite linear;
+}
+
+.particle:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+    animation-duration: 12s;
+}
+
+.particle:nth-child(2) {
+    left: 20%;
+    animation-delay: -2s;
+    animation-duration: 15s;
+}
+
+.particle:nth-child(3) {
+    left: 30%;
+    animation-delay: -4s;
+    animation-duration: 18s;
+}
+
+.particle:nth-child(4) {
+    left: 40%;
+    animation-delay: -6s;
+    animation-duration: 14s;
+}
+
+.particle:nth-child(5) {
+    left: 50%;
+    animation-delay: -8s;
+    animation-duration: 16s;
+}
+
+.particle:nth-child(6) {
+    left: 60%;
+    animation-delay: -10s;
+    animation-duration: 13s;
+}
+
+.particle:nth-child(7) {
+    left: 70%;
+    animation-delay: -12s;
+    animation-duration: 17s;
+}
+
+.particle:nth-child(8) {
+    left: 80%;
+    animation-delay: -14s;
+    animation-duration: 15s;
+}
+
+.particle:nth-child(9) {
+    left: 90%;
+    animation-delay: -16s;
+    animation-duration: 14s;
+}
+
+.particle:nth-child(10) {
+    left: 95%;
+    animation-delay: -18s;
+    animation-duration: 16s;
+}
+
+@keyframes particleFloat {
+    0% {
+        transform: translateY(100vh) scale(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+    90% {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+    100% {
+        transform: translateY(-100px) scale(0);
+        opacity: 0;
+    }
+}
+
+/* Wavy Background Animation */
+.wave-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200%;
+    height: 100px;
+    background: transparent;
+    opacity: 0.3;
+    animation: waveMove 8s ease-in-out infinite;
+}
+
+.wave::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        var(--primary-color) 20%, 
+        var(--secondary-color) 40%, 
+        var(--accent-color) 60%, 
+        var(--secondary-color) 80%, 
+        transparent 100%
+    );
+    border-radius: 50% 50% 0 0;
+    transform: scaleY(0.3);
+}
+
+.wave-1 {
+    height: 80px;
+    animation-delay: 0s;
+    animation-duration: 8s;
+    opacity: 0.4;
+}
+
+.wave-1::before {
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        var(--primary-color) 15%, 
+        var(--primary-color) 25%, 
+        transparent 35%, 
+        transparent 65%, 
+        var(--primary-color) 75%, 
+        var(--primary-color) 85%, 
+        transparent 100%
+    );
+    border-radius: 50% 50% 0 0;
+    transform: scaleY(0.4);
+}
+
+.wave-2 {
+    height: 100px;
+    animation-delay: -2s;
+    animation-duration: 10s;
+    opacity: 0.3;
+}
+
+.wave-2::before {
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        var(--secondary-color) 20%, 
+        var(--secondary-color) 30%, 
+        transparent 40%, 
+        transparent 60%, 
+        var(--secondary-color) 70%, 
+        var(--secondary-color) 80%, 
+        transparent 100%
+    );
+    border-radius: 50% 50% 0 0;
+    transform: scaleY(0.5);
+}
+
+.wave-3 {
+    height: 60px;
+    animation-delay: -4s;
+    animation-duration: 12s;
+    opacity: 0.25;
+}
+
+.wave-3::before {
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        var(--accent-color) 25%, 
+        var(--accent-color) 35%, 
+        transparent 45%, 
+        transparent 55%, 
+        var(--accent-color) 65%, 
+        var(--accent-color) 75%, 
+        transparent 100%
+    );
+    border-radius: 50% 50% 0 0;
+    transform: scaleY(0.6);
+}
+
+.wave-4 {
+    height: 120px;
+    animation-delay: -6s;
+    animation-duration: 14s;
+    opacity: 0.2;
+}
+
+.wave-4::before {
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        var(--primary-color) 30%, 
+        var(--primary-color) 40%, 
+        transparent 50%, 
+        transparent 50%, 
+        var(--primary-color) 60%, 
+        var(--primary-color) 70%, 
+        transparent 100%
+    );
+    border-radius: 50% 50% 0 0;
+    transform: scaleY(0.7);
+}
+
+@keyframes waveMove {
+    0% {
+        transform: translateX(-50%) translateY(0px) scaleY(1);
+    }
+    25% {
+        transform: translateX(-40%) translateY(-10px) scaleY(1.1);
+    }
+    50% {
+        transform: translateX(-30%) translateY(0px) scaleY(0.9);
+    }
+    75% {
+        transform: translateX(-20%) translateY(-15px) scaleY(1.2);
+    }
+    100% {
+        transform: translateX(-10%) translateY(0px) scaleY(1);
+    }
+}
+
+/* Alternative wave animation for more dynamic effect */
+@keyframes waveMoveAlt {
+    0% {
+        transform: translateX(-50%) translateY(0px) scaleY(1);
+    }
+    20% {
+        transform: translateX(-45%) translateY(-8px) scaleY(1.05);
+    }
+    40% {
+        transform: translateX(-35%) translateY(5px) scaleY(0.95);
+    }
+    60% {
+        transform: translateX(-25%) translateY(-12px) scaleY(1.15);
+    }
+    80% {
+        transform: translateX(-15%) translateY(3px) scaleY(0.9);
+    }
+    100% {
+        transform: translateX(-5%) translateY(0px) scaleY(1);
+    }
+}
+
+/* Apply alternative animation to some waves */
+.wave-2 {
+    animation-name: waveMoveAlt;
+}
+
+.wave-4 {
+    animation-name: waveMoveAlt;
+}
+
+/* Wave containers for all sections */
+.biography .wave-container,
+.selected-work .wave-container,
+.services .wave-container,
+.story .wave-container,
+.tech-stack .wave-container,
+.testimonials .wave-container,
+.work-process .wave-container,
+.awards .wave-container,
+.job-search .wave-container,
+.faqs .wave-container,
+.contact-work .wave-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+    opacity: 0.6;
+}
+
+/* Different wave intensities for different sections */
+.biography .wave-container {
+    opacity: 0.4;
+}
+
+.selected-work .wave-container {
+    opacity: 0.5;
+}
+
+.services .wave-container {
+    opacity: 0.3;
+}
+
+.story .wave-container {
+    opacity: 0.4;
+}
+
+.tech-stack .wave-container {
+    opacity: 0.5;
+}
+
+.testimonials .wave-container {
+    opacity: 0.3;
+}
+
+.work-process .wave-container {
+    opacity: 0.4;
+}
+
+.awards .wave-container {
+    opacity: 0.3;
+}
+
+.job-search .wave-container {
+    opacity: 0.4;
+}
+
+.faqs .wave-container {
+    opacity: 0.3;
+}
+
+.contact-work .wave-container {
+    opacity: 0.5;
+}
+
+/* Ensure all sections have proper positioning for waves */
+.biography,
+.selected-work,
+.services,
+.story,
+.tech-stack,
+.testimonials,
+.work-process,
+.awards,
+.job-search,
+.faqs,
+.contact-work {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ensure containers are above waves */
+.biography .container,
+.selected-work .container,
+.services .container,
+.story .container,
+.tech-stack .container,
+.testimonials .container,
+.work-process .container,
+.awards .container,
+.job-search .container,
+.faqs .container,
+.contact-work .container {
+    position: relative;
+    z-index: 10;
 }
 
 .stat-card {
@@ -2036,39 +2554,194 @@ body {
 }
 
 /* Footer */
+/* Footer Styles */
 .footer {
     background-color: var(--bg-tertiary);
-    padding: var(--spacing-2xl) 0;
+    padding: var(--spacing-4xl) 0 var(--spacing-xl) 0;
     border-top: 1px solid var(--border-color);
     position: relative;
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: var(--spacing-3xl);
+    margin-bottom: var(--spacing-3xl);
+}
+
+.footer-brand {
+    max-width: 300px;
 }
 
 .footer-name {
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-3xl);
     font-weight: 300;
     color: var(--primary-color);
     letter-spacing: -0.02em;
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-tagline {
+    font-size: var(--font-size-lg);
+    color: var(--text-primary);
+    font-weight: 500;
+    margin-bottom: var(--spacing-md);
+}
+
+.footer-description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: var(--font-size-sm);
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section-title {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-lg);
+    position: relative;
+}
+
+.footer-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: var(--radius-sm);
 }
 
 .footer-links {
-    display: flex;
-    gap: var(--spacing-xl);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: var(--spacing-sm);
 }
 
 .footer-link {
     color: var(--text-secondary);
     text-decoration: none;
-    font-weight: 500;
-    transition: color var(--transition-normal);
+    font-weight: 400;
+    transition: all var(--transition-normal);
+    display: inline-block;
+    position: relative;
 }
 
 .footer-link:hover {
+    color: var(--primary-color);
+    transform: translateX(5px);
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--text-secondary);
+    font-size: var(--font-size-sm);
+}
+
+.contact-item i {
+    color: var(--primary-color);
+    width: 16px;
+    text-align: center;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: all var(--transition-normal);
+    padding: var(--spacing-xs) 0;
+}
+
+.social-link:hover {
+    color: var(--primary-color);
+    transform: translateX(5px);
+}
+
+.social-link i {
+    width: 20px;
+    text-align: center;
+    font-size: var(--font-size-base);
+}
+
+.footer-cv-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--radius-md);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    font-size: var(--font-size-sm);
+}
+
+.footer-cv-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--border-color);
+    padding-top: var(--spacing-xl);
+}
+
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.footer-copyright {
+    color: var(--text-muted);
+    font-size: var(--font-size-sm);
+    margin: 0;
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
+.footer-bottom-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: var(--font-size-sm);
+    transition: color var(--transition-normal);
+}
+
+.footer-bottom-link:hover {
     color: var(--primary-color);
 }
 
@@ -2178,6 +2851,54 @@ section {
         gap: var(--spacing-lg);
     }
     
+    /* Reduce 3D animation intensity on mobile */
+    .bg-3d-shape {
+        opacity: 0.05;
+        animation-duration: 30s;
+    }
+    
+    .particle {
+        opacity: 0.3;
+        animation-duration: 20s;
+    }
+    
+    /* Reduce wave animation intensity on mobile */
+    .wave {
+        opacity: 0.05;
+        animation-duration: 15s;
+    }
+    
+    /* Reduce wave intensity in all sections on mobile */
+    .biography .wave-container,
+    .selected-work .wave-container,
+    .services .wave-container,
+    .story .wave-container,
+    .tech-stack .wave-container,
+    .testimonials .wave-container,
+    .work-process .wave-container,
+    .awards .wave-container,
+    .job-search .wave-container,
+    .faqs .wave-container,
+    .contact-work .wave-container {
+        opacity: 0.1;
+    }
+    
+    .wave-1 {
+        height: 60px;
+    }
+    
+    .wave-2 {
+        height: 80px;
+    }
+    
+    .wave-3 {
+        height: 40px;
+    }
+    
+    .wave-4 {
+        height: 100px;
+    }
+    
     .biography-main-title {
         font-size: var(--font-size-3xl);
     }
@@ -2199,8 +2920,17 @@ section {
     }
     
     .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+        text-align: center;
+    }
+    
+    .footer-brand {
+        max-width: none;
+    }
+    
+    .footer-bottom-content {
         flex-direction: column;
-        gap: var(--spacing-lg);
         text-align: center;
     }
 }
