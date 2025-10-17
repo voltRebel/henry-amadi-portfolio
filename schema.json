@@ -1,0 +1,191 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Henry Amadi",
+  "jobTitle": "Computer Science Graduate",
+  "description": "Motivated Computer Science graduate with expertise in IT support, data analysis, and technology solutions. Delivering exceptional results through analytical thinking and technical innovation.",
+  "url": "https://henryamadi.com",
+  "image": "https://henryamadi.com/assets/images/henry.jpg",
+  "sameAs": [
+    "https://github.com/henryamadi",
+    "https://linkedin.com/in/henryamadi",
+    "https://twitter.com/henryamadi"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Birmingham",
+    "addressCountry": "UK"
+  },
+  "email": "henry.amadi@gmail.com",
+  "telephone": "+44(0)7471796394",
+  "knowsAbout": [
+    "Data Analysis",
+    "IT Support",
+    "Python Programming",
+    "SQL Database Management",
+    "Microsoft 365",
+    "Power BI",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Customer Service",
+    "Active Directory",
+    "Excel Data Processing",
+    "Git Version Control",
+    "Linux System Administration",
+    "Kotlin",
+    "Android Development",
+    "Java Programming"
+  ],
+  "alumniOf": [
+    {
+      "@type": "EducationalOrganization",
+      "name": "Birmingham City University",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Birmingham",
+        "addressCountry": "UK"
+      }
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "Birmingham City University International College",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Birmingham",
+        "addressCountry": "UK"
+      }
+    }
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "degree",
+      "educationalLevel": "Bachelor's Degree",
+      "about": "Computer Science",
+      "recognizedBy": {
+        "@type": "EducationalOrganization",
+        "name": "Birmingham City University"
+      },
+      "dateCreated": "2025-06-01"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "certificate",
+      "about": "Google Data Analytics Professional Certificate",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Google"
+      },
+      "dateCreated": "2023-01-01"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "certificate",
+      "about": "Cisco Networking Certification",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "Cisco"
+      },
+      "dateCreated": "2023-01-01"
+    }
+  ],
+  "workHistory": [
+    {
+      "@type": "OrganizationRole",
+      "roleName": "Data Analyst & Administrative Support",
+      "startDate": "2024-09-01",
+      "endDate": "2025-01-01",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Ayokunle Creative Studio"
+      },
+      "description": "Delivering frontline HR-related support, coordinating scheduling, and supporting project documentation in apprenticeship and training materials."
+    },
+    {
+      "@type": "OrganizationRole",
+      "roleName": "Customer Service & Front-of-House Assistant",
+      "startDate": "2022-01-01",
+      "endDate": "2024-08-01",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "NEC Birmingham"
+      },
+      "description": "Delivered exceptional customer service with 98% satisfaction score, handling queries and maintaining accuracy in order processing."
+    },
+    {
+      "@type": "OrganizationRole",
+      "roleName": "IT & Helpdesk Support Analyst",
+      "startDate": "2019-01-01",
+      "endDate": "2021-12-01",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "De Experience Global Limited"
+      },
+      "description": "Resolved 50+ weekly support tickets with 95% first-contact resolution rate, managed Active Directory and Microsoft 365 accounts."
+    }
+  ],
+  "seeks": [
+    {
+      "@type": "JobPosting",
+      "title": "Graduate Data Analyst",
+      "description": "Seeking opportunities in data analysis, IT support, and technology solutions"
+    },
+    {
+      "@type": "JobPosting", 
+      "title": "Entry Level Software Developer",
+      "description": "Looking for entry-level positions in software development and programming"
+    }
+  ],
+  "award": [
+    {
+      "@type": "Award",
+      "name": "Google Data Analytics Professional Certificate",
+      "dateCreated": "2023-01-01"
+    },
+    {
+      "@type": "Award",
+      "name": "Cisco Networking Certification",
+      "dateCreated": "2023-01-01"
+    },
+    {
+      "@type": "Award",
+      "name": "BSc Computer Science - 2:1 Grade",
+      "dateCreated": "2025-06-01"
+    }
+  ],
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Data Analysis & Visualization",
+        "description": "Transform raw data into actionable insights using Python, SQL, and Excel for comprehensive data processing and visualization."
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "IT Support & Helpdesk",
+        "description": "Expert troubleshooting and remote support with Active Directory and Microsoft 365 management expertise."
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Programming & Development",
+        "description": "Full-stack development capabilities with Python, JavaScript, HTML, and CSS for web applications."
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Customer Service & Communication",
+        "description": "Exceptional customer service with professional communication and cross-functional collaboration skills."
+      }
+    }
+  ]
+}

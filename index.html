@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Henry Amadi - Computer Science graduate showcasing projects and skills">
+    <meta name="keywords" content="portfolio, web developer, software engineer, projects, resume, Henry Amadi">
+    <meta name="author" content="Henry Amadi">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Henry Amadi - Portfolio">
+    <meta property="og:description" content="Computer Science graduate showcasing innovative projects and technical skills">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://henryamadi.com">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Henry Amadi - Portfolio">
+    <meta name="twitter:description" content="Computer Science graduate showcasing innovative projects and technical skills">
+    
+    <title>HENRY AMADI </title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Animated Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">HENRY AMADI </span>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+              
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        
+        <div class="hero-container">
+            <!-- Top Section with Logo and Navigation -->
+            <div class="hero-top">
+                <div class="hero-logo">
+                    <h1 class="logo-name">Henry</h1>
+                    <p class="logo-subtitle">Computer Science Graduate</p>
+                </div>
+                
+                <div class="hero-nav-icons">
+                    <button class="nav-icon" id="scroll-down-btn" aria-label="Scroll Down">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <button class="nav-icon" id="search-btn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="nav-icon" id="hero-menu-btn" aria-label="Menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Main Headline -->
+            <div class="hero-main">
+                <h2 class="hero-headline">Transforming Data Into Actionable Insights</h2>
+                <p class="hero-description">
+                    Motivated Computer Science graduate with expertise in IT support, data analysis, and technology solutions. 
+                    Delivering exceptional results through analytical thinking and technical innovation.
+                </p>
+                
+                <!-- Service Tags -->
+                <div class="service-tags">
+                    <a href="#" class="service-tag">Data Analysis</a>
+                    <a href="#" class="service-tag">IT Support</a>
+                    <a href="#" class="service-tag">Python</a>
+                    <a href="#" class="service-tag">SQL</a>
+                    <a href="#" class="service-tag">Microsoft 365</a>
+                </div>
+            </div>
+            
+            <!-- Statistics Cards -->
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="95">0</div>
+                    <div class="stat-label">First-Contact Resolution Rate</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-label">Customer Satisfaction Score</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Weekly Support Tickets Resolved</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Biography Section -->
+    <section id="about" class="biography">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="container">
+            <div class="biography-content">
+                <div class="biography-header">
+                    <div class="language-selector">
+                        <span class="language-text">ENG AUS</span>
+                    </div>
+                    <div class="biography-title">
+                        <h2 class="biography-label">BIOGRAPHY</h2>
+                        <h3 class="biography-main-title">Who am I?</h3>
+                        <div class="biography-accent"></div>
+                    </div>
+                </div>
+                
+                <div class="biography-card">
+                    <div class="biography-card-header">
+                        <div class="availability-indicator">
+                            <div class="availability-dot"></div>
+                            <span class="availability-text">Available for work opportunities</span>
+                        </div>
+                    </div>
+                    
+                    <div class="biography-profile">
+                        <div class="profile-image-container">
+                            <img src="assets/images/henry.jpg" alt="Henry Amadi" class="profile-image">
+                        </div>
+                        
+                        <div class="profile-details">
+                            <h4 class="profile-name">Henry</h4>
+                            <p class="profile-email">henry.amadi@gmail.com</p>
+                            <p class="profile-location">Based in United Kingdom</p>
+                            
+                            <div class="social-icons">
+                                <a href="#" class="social-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                        <rect width="4" height="12" x="2" y="9"/>
+                                        <circle cx="4" cy="4" r="2"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            
+                            <button class="get-started-btn" id="biography-download-cv">
+                                <span>Download CV</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="7,10 12,15 17,10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="biography-details">
+                    <div class="biography-text">
+                        <h4 class="biography-subtitle">About Me</h4>
+                        <h5 class="biography-name">Henry Amadi's Details</h5>
+                        <p class="biography-description">
+                            Motivated and detail-oriented Computer Science graduate with strong interest and experience in IT support, 
+                            data analysis, and technology. Skilled in troubleshooting, data collection, and software application 
+                            assistance, leveraging tools such as SQL, Python, and Microsoft 365.
+                        </p>
+                        <p class="biography-description">
+                            Experienced in providing customer support, resolving technical incidents, and communicating data insights 
+                            to technical and non-technical audiences. Reliable, adaptable, and committed to continuous learning and 
+                            professional growth within the IT and data domains.
+                        </p>
+                        <div class="biography-education">
+                            <h4 class="biography-subtitle">Education</h4>
+                            <div class="education-item">
+                                <h5>BSc. Computer Science</h5>
+                                <p>Birmingham City University, Birmingham | Sept 2022 – June 2025</p>
+                                <p>Achieved grade - 2:1</p>
+                            </div>
+                            <div class="education-item">
+                                <h5>Foundation in Film and Technology/Computing Networks and Games Technology</h5>
+                                <p>Birmingham City University International College, Birmingham | Jan 2022 – Aug 2022</p>
+                            </div>
+                        </div>
+                        <div class="biography-certifications">
+                            <h4 class="biography-subtitle">Certifications</h4>
+                            <ul class="certification-list">
+                                <li>Google Data Analytics Professional Certificate</li>
+                                <li>Cisco Networking (2023) – Network configuration, troubleshooting, and security</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Statistics Section -->
+                        <div class="biography-stats">
+                            <h4 class="biography-subtitle">My Achievements</h4>
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <div class="stat-number" data-target="50">0</div>
+                                    <div class="stat-label">Projects Completed</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number" data-target="95">0</div>
+                                    <div class="stat-label">Success Rate %</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number" data-target="3">0</div>
+                                    <div class="stat-label">Years Experience</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Timeline Section -->
+                        <div class="biography-timeline">
+                            <h4 class="biography-subtitle">My Journey</h4>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <h5>Data Analyst & Administrative Support</h5>
+                                        <p class="timeline-date">Sep 2024 – Present</p>
+                                        <p>Ayokunle Creative Studio - Delivering frontline HR-related support, coordinating scheduling, and supporting project documentation in apprenticeship and training materials.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <h5>Customer Service & Front-of-House Assistant</h5>
+                                        <p class="timeline-date">Jan 2022 – Aug 2024</p>
+                                        <p>NEC Birmingham - Delivered exceptional customer service with 98% satisfaction score, handling queries and maintaining accuracy in order processing.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <h5>IT & Helpdesk Support Analyst</h5>
+                                        <p class="timeline-date">Jan 2019 – Dec 2021</p>
+                                        <p>De Experience Global Limited - Resolved 50+ weekly support tickets with 95% first-contact resolution rate, managed Active Directory and Microsoft 365 accounts.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Selected Work Section -->
+    <section id="projects" class="selected-work">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-accent"></span>
+                    Selected Work
+                </h2>
+            </div>
+            
+            <div class="work-projects">
+                <div class="work-project">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80" alt="Flutter Job Getter App" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Flutter Job Getter Application</h3>
+                        <p>A comprehensive mobile application built with Flutter that helps job seekers find and apply for positions. Features include job search, application tracking, resume builder, and interview scheduling with real-time notifications.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">REST API</span>
+                        </div>
+                        <a href="#" class="project-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="work-project">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80" alt="Android Plant Health Care App" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Android Plant Health Care Application</h3>
+                        <p>An intelligent Android application that helps users monitor and care for their plants. Features include plant identification, health monitoring, watering reminders, growth tracking, and AI-powered disease detection using image recognition.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Android</span>
+                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">SQLite</span>
+                        </div>
+                        <a href="#" class="project-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="work-project">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80" alt="Supermarket Website" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Supermarket Website</h3>
+                        <p>A full-stack e-commerce website for a supermarket chain featuring online shopping, cart management, payment processing, order tracking, and admin dashboard. Includes responsive design and secure payment integration.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <a href="#" class="project-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Data Analysis & Visualization</h3>
+                    <p>Transform raw data into actionable insights using Python, SQL, and Excel for comprehensive data processing and visualization.</p>
+                    <ul>
+                        <li>Python Programming</li>
+                        <li>SQL Database Queries</li>
+                        <li>Excel Data Processing</li>
+                        <li>Power BI Dashboards</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>IT Support & Helpdesk</h3>
+                    <p>Expert troubleshooting and remote support with Active Directory and Microsoft 365 management expertise.</p>
+                    <ul>
+                        <li>Technical Troubleshooting</li>
+                        <li>Remote Support</li>
+                        <li>Active Directory</li>
+                        <li>Microsoft 365</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming & Development</h3>
+                    <p>Full-stack development capabilities with Python, JavaScript, HTML, and CSS for web applications.</p>
+                    <ul>
+                        <li>Python Scripting</li>
+                        <li>JavaScript Development</li>
+                        <li>HTML/CSS Frontend</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Customer Service & Communication</h3>
+                    <p>Exceptional customer service with professional communication and cross-functional collaboration skills.</p>
+                    <ul>
+                        <li>Query Resolution</li>
+                        <li>Professional Communication</li>
+                        <li>Issue Escalation</li>
+                        <li>Team Collaboration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Story Section -->
+    <section class="story">
+        <div class="container">
+            <div class="story-content">
+                <h2 class="story-title">Behind every successful solution is a commitment to excellence.</h2>
+                <p class="story-description">
+                    As a Computer Science graduate, I combine technical expertise with analytical thinking to solve complex problems. 
+                    From IT support to data analysis, every challenge is an opportunity to learn, innovate, and deliver exceptional results. 
+                    My journey is defined by continuous learning and a passion for technology that drives meaningful impact.
+                </p>
+                
+                <div class="story-gallery">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&h=200&q=80" alt="Data Analysis" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&h=200&q=80" alt="IT Support" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&h=200&q=80" alt="Programming" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&h=200&q=80" alt="Customer Service" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Tech Stack Section -->
+    <section id="skills" class="tech-stack">
+        <div class="container">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="tech-cards">
+                <div class="tech-card">
+                    <div class="tech-logo">
+                        <div class="python-logo">
+                            <span>Py</span>
+                        </div>
+                    </div>
+                    <h3>Python</h3>
+                    <p>Data Analysis & Programming</p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-logo">
+                        <div class="sql-logo">
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                    <h3>SQL</h3>
+                    <p>Database Management & Queries</p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-logo">
+                        <div class="microsoft-logo">
+                            <span>MS</span>
+                        </div>
+                    </div>
+                    <h3>Microsoft 365</h3>
+                    <p>Productivity & Collaboration</p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-logo">
+                        <div class="powerbi-logo">
+                            <span>BI</span>
+                        </div>
+                    </div>
+                    <h3>Power BI</h3>
+                    <p>Data Visualization & Analytics</p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-logo">
+                        <div class="javascript-logo">
+                            <span>JS</span>
+                        </div>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Web Development & Scripting</p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-logo">
+                        <div class="html-css-logo">
+                            <span>HC</span>
+                        </div>
+                    </div>
+                    <h3>HTML/CSS</h3>
+                    <p>Frontend Development & Styling</p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-logo">
+                        <div class="excel-logo">
+                            <span>XL</span>
+                        </div>
+                    </div>
+                    <h3>Excel</h3>
+                    <p>Data Analysis & Spreadsheets</p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-logo">
+                        <div class="git-logo">
+                            <span>Git</span>
+                        </div>
+                    </div>
+                    <h3>Git</h3>
+                    <p>Version Control & Collaboration</p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-logo">
+                        <div class="linux-logo">
+                            <span>Linux</span>
+                        </div>
+                    </div>
+                    <h3>Linux</h3>
+                    <p>System Administration & CLI</p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-logo">
+                        <div class="kotlin-logo">
+                            <span>Kt</span>
+                        </div>
+                    </div>
+                    <h3>Kotlin</h3>
+                    <p>Mobile Development & Programming</p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-logo">
+                        <div class="android-logo">
+                            <span>And</span>
+                        </div>
+                    </div>
+                    <h3>Android</h3>
+                    <p>Mobile App Development</p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-logo">
+                        <div class="java-logo">
+                            <span>Java</span>
+                        </div>
+                    </div>
+                    <h3>Java</h3>
+                    <p>Object-Oriented Programming</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonial-content">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                
+                <!-- Testimonial 1 -->
+                <div class="testimonial-slide active">
+                    <blockquote class="testimonial-quote">
+                        "Henry's technical expertise and attention to detail are exceptional. His ability to resolve complex IT issues 
+                        quickly and communicate solutions clearly makes him an invaluable team member."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <span>Senior Manager, De Experience Global</span>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-slide">
+                    <blockquote class="testimonial-quote">
+                        "Henry consistently delivered outstanding customer service with a 98% satisfaction rate. His professionalism 
+                        and problem-solving skills made him a trusted member of our team at NEC Birmingham."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <span>Team Manager, NEC Birmingham</span>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-slide">
+                    <blockquote class="testimonial-quote">
+                        "Working with Henry has been a pleasure. His data analysis skills and attention to detail have significantly 
+                        improved our HR processes. He's reliable, adaptable, and always willing to learn new technologies."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <span>HR Director, Ayokunle Creative Studio</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Work Process Section -->
+    <section class="work-process">
+        <div class="container">
+            <h2 class="section-title">Work Process</h2>
+            <div class="process-cards">
+                <div class="process-card">
+                    <div class="process-icon">
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <h3>Design Progress</h3>
+                    <p>From initial concept to final delivery, every step is carefully planned and executed.</p>
+                </div>
+                
+                <div class="process-card">
+                    <div class="process-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Project Execution</h3>
+                    <p>Efficient workflow management ensures timely delivery without compromising quality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Awards Section -->
+    <section class="awards">
+        <div class="container">
+            <h2 class="section-title">My Awards</h2>
+            <div class="awards-list">
+                <div class="award-item">
+                    <div class="award-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="award-content">
+                        <h4>Google Data Analytics Professional Certificate</h4>
+                    </div>
+                    <div class="award-date">2023</div>
+                </div>
+                
+                <div class="award-item">
+                    <div class="award-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="award-content">
+                        <h4>Cisco Networking Certification</h4>
+                    </div>
+                    <div class="award-date">2023</div>
+                </div>
+                
+                <div class="award-item">
+                    <div class="award-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="award-content">
+                        <h4>BSc Computer Science - 2:1 Grade</h4>
+                    </div>
+                    <div class="award-date">2025</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Job Search & Availability Section -->
+    <section class="job-search">
+        <div class="container">
+            <h2 class="section-title">Seeking Opportunities</h2>
+            <div class="job-type-toggle">
+                <span class="toggle-label">Graduate Scheme</span>
+                <div class="toggle-switch">
+                    <input type="checkbox" id="job-type-toggle">
+                    <label for="job-type-toggle"></label>
+                </div>
+                <span class="toggle-label">Entry Level</span>
+            </div>
+            
+            <div class="job-search-card">
+                <div class="job-search-header">
+                    <div class="availability-status">
+                        <span class="status-label">Graduate Ready</span>
+                        <span class="status-highlight">Available</span>
+                        <span class="status-period">for immediate start</span>
+                    </div>
+                </div>
+                <div class="job-search-features">
+                    <div class="feature-category">
+                        <h4>Technical Skills</h4>
+                        <ul>
+                            <li><i class="fas fa-code"></i> Python & SQL Programming</li>
+                            <li><i class="fas fa-chart-bar"></i> Data Analysis & Visualization</li>
+                            <li><i class="fas fa-database"></i> Database Management</li>
+                        </ul>
+                    </div>
+                    <div class="feature-category">
+                        <h4>Professional Experience</h4>
+                        <ul>
+                            <li><i class="fas fa-headset"></i> IT Support & Helpdesk</li>
+                            <li><i class="fas fa-users"></i> Customer Service Excellence</li>
+                            <li><i class="fas fa-cogs"></i> Microsoft 365 Administration</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="job-search-cta">
+                    <p class="cta-text">Ready to contribute fresh ideas and technical skills to your team</p>
+                    <button class="contact-btn">
+                        Let's Connect
+                        <i class="fas fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQs Section -->
+    <section class="faqs">
+        <div class="container">
+            <h2 class="section-title">FAQs</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What technical skills do you bring to a role?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>I bring expertise in Python programming, SQL database management, data analysis with Excel and Power BI, IT support including Active Directory and Microsoft 365, and strong problem-solving abilities. I also have experience with JIRA, Confluence, and customer service excellence.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What is your availability for work?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>I am currently available for both full-time and part-time opportunities. I'm flexible with working arrangements and can start immediately. I'm based in Birmingham, UK, and can work remotely or on-site as required.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What makes you stand out as a candidate?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>My combination of technical expertise and exceptional customer service skills sets me apart. I've achieved 95% first-contact resolution rate and 98% customer satisfaction scores. I'm also a Computer Science graduate with Google Data Analytics and Cisco Networking certifications, demonstrating my commitment to continuous learning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Contact For Work Section -->
+    <section id="contact" class="contact-work">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact For Work</h2>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-details">
+                    <div class="contact-field">
+                        <label>Email</label>
+                        <input type="email" value="amadichituga@hotmail.com" readonly>
+                    </div>
+                    
+                    <div class="contact-field">
+                        <label>Phone</label>
+                        <input type="tel" value="+44(0)7471796394" readonly>
+                    </div>
+                </div>
+                
+                
+                <div class="booking-section">
+                    <button class="download-cv-btn" id="download-cv-btn">
+                        <span>Download CV</span>
+                        <i class="fas fa-download"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2 class="footer-name">Henry</h2>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#contact" class="footer-link">Get In Touch</a>
+                    <a href="#" class="footer-link" id="footer-download-cv">Download CV</a>
+                </div>
+            </div>
+            
+            <div class="footer-glow"></div>
+        </div>
+    </footer>
+    
+    <!-- Project Modal -->
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+            <span class="modal-close" id="modal-close">&times;</span>
+            <div class="modal-body" id="modal-body">
+                <!-- Project details will be loaded here -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
+
