@@ -63,7 +63,7 @@ HENRY AMADI - Portfolio/
 ### Personal Information
 The portfolio is already customized with Henry Amadi's information:
 - **Name**: Henry Amadi
-- **Email**: henry.amadi@gmail.com
+- **Email**: Amadichituga@hotmail.com
 - **Phone**: +44(0)7471796394
 - **Location**: Birmingham, UK
 - **Status**: Computer Science Graduate (Available for work)
@@ -162,7 +162,7 @@ The portfolio showcases expertise in:
 ## 📞 Contact Information
 
 **Henry Amadi**
-- **Email**: henry.amadi@gmail.com
+- **Email**: Amadichituga@hotmail.com
 - **Phone**: +44(0)7471796394
 - **Location**: Birmingham, UK
 - **Status**: Available for work opportunities
@@ -214,7 +214,7 @@ Contributions are welcome! Please feel free to submit a Pull Request for improve
 ## 📧 Support
 
 For questions about this portfolio or Henry Amadi's services, please contact:
-- **Email**: henry.amadi@gmail.com
+- **Email**: Amadichituga@hotmail.com
 - **Phone**: +44(0)7471796394
 
 ---
